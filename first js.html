@@ -1,0 +1,23 @@
+<html><head>
+
+</head>
+    <body>
+     <p id="praga"></p>
+     <p id="add"></p>
+     <p id="fullName"></p>
+<script>
+    var a=100,b=20,c;
+    c=a*b;
+    document.getElementById("add").innerHTML="adding value is " +c;
+document.getElementById("praga").innerHTML="hello praga";
+var person= { 
+  firstName: "pragadeesh",
+  lastName : "praga",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("fullName").innerHTML="fullname is"+" "+person.fullName();
+</script>
+    </body>
+</html>
