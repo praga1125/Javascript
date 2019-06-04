@@ -1,0 +1,44 @@
+<html>
+<head>
+<style> 
+#myDIV {
+  margin: 25px;
+  width: 550px;
+  height: 100px;
+  background: rgb(255, 238, 0);
+  position: relative;
+  font-size: 25px;
+  -webkit-animation-name: clickme;  
+  -webkit-animation-duration: 10s;  
+  animation-name: clickme;
+  animation-duration: 10s;
+}
+@-webkit-keyframes clickme {
+  from {top: 0px;}
+  to {top: 500px;}
+}
+@keyframes clickme {
+  from {top: 0px;}
+  to {top: 500px;}
+}
+</style>
+</head>
+<body>
+<center>
+<a href="https://www.google.com" target="_blank">
+<div id="myDIV"></div>
+</a></center>
+<script>
+var x = document.getElementById("myDIV");
+x.addEventListener("webkitAnimationStart", myStartFunction);
+x.addEventListener("animationstart", myStartFunction);
+function myStartFunction(event) {
+  this.innerHTML =  " "+ event.animationName;
+}
+</script>
+
+
+</body>
+
+
+</html>
