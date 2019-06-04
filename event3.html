@@ -1,0 +1,29 @@
+<html>
+<head>
+<style> 
+#myDIV {
+    width: 100px;
+  height: 100px;
+    background: rgb(0, 255, 255);
+  -webkit-transition: width 2s; 
+ transition: width 2s;
+}
+#myDIV:hover {
+  width: 400px;
+}
+</style>
+</head>
+<body>
+<h1>touch the color..</h1>
+<div id="myDIV"></div>
+<script>
+document.getElementById("myDIV").addEventListener("webkitTransitionEnd", myFunction);
+document.getElementById("myDIV").addEventListener("transitionend", myFunction);
+function myFunction() {
+  this.innerHTML = "my first animation...";
+  this.style.backgroundColor = "yellow";
+}
+</script>
+
+</body>
+</html>
