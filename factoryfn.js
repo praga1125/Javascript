@@ -3,7 +3,7 @@ function mobile(){
     return {
      model:'mi',
      price:function() {return '33000';}
-    }
+    };
 }
 let samsung=mobile();
 console.log("the phone name is"+" " +samsung.model+" "+"and its price"+" "+samsung.price());
