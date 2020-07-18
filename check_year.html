@@ -1,0 +1,18 @@
+<html><head> 
+ </head> 
+ <body> 
+  <script src="leap_year.js"></script> 
+  <h1>thank you..</h1> 
+ 
+<script type="text/javascript" id="dcoder_script">var year=window.prompt("enter the year to check:");
+ans =leapyear(year);
+function leapyear(year)
+{
+return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
+if(ans){
+  alert("this is leap year");
+}
+else{
+  alert(" this is not a leap year");
+}</script></body></html>
