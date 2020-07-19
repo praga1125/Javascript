@@ -1,0 +1,25 @@
+<html><head>
+   <title>new page</title>
+ </head>
+ <body>
+   <h1>This program is used to convert the temperature</h1>  
+ 
+<script type="text/javascript" id="dcoder_script">function celsius(celsius) 
+{
+  var cTemp = celsius;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+    alert(message);
+}
+
+function fahrenheit(fahrenheit) 
+{
+  var fTemp = fahrenheit;
+  var fToCel = (fTemp - 32) * 5 / 9;
+  var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+    alert(message);
+} 
+var value=window.prompt("enter the Celsius to convert");
+celsius(value);
+var value=window.prompt("enter the fahrenheit to convert");
+fahrenheit(value);</script></body></html>
