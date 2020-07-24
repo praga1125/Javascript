@@ -1,0 +1,36 @@
+<html><head></head><body>
+ <center>
+  <h2>
+     This program is used to check even number
+  </h2>
+  </center>
+
+
+
+<script type="text/javascript" id="dcoder_script">function is_even_recursion(number)
+{
+  if (number < 0) 
+  {
+    number = Math.abs(number);
+  }
+  if (number===0) 
+  {
+    return true;
+  }
+  if (number===1) 
+  {
+    return false;
+  }
+  else 
+  {
+    number = number - 2;
+    return is_even_recursion(number);
+  }
+}
+var num = prompt("enter the number to check");
+if(is_even_recursion(num)){
+  alert("This is even number");
+}
+else{
+  alert("This is not even number")
+}</script></body></html>
