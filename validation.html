@@ -1,0 +1,24 @@
+<html><head>
+<title>new page</title>
+</head><body>
+  <center>
+ <h3>validation form:</h3>
+<form id="form1" onsubmit="getFormvalue()">
+ &gt; email id: <input type="text" name="mail"><br><br>
+&gt; password: <input type="text" name="pass"><br><br>
+<input type="submit" value="Submit">
+</form>
+</center>
+
+<script type="text/javascript" id="dcoder_script">function getFormvalue()
+{
+  var x=document.getElementById("form1");
+  for (var i=0;i<x.length;i++)
+  {
+   if (x.elements[i].value!='Submit')
+    {  
+      console.log(x.elements[i].value);
+     }  
+   }
+}
+</script></body></html>
